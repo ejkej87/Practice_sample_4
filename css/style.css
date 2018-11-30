@@ -102,11 +102,11 @@ body {
    font-weight: 300;
 }
 
-.menager{
+.menager {
    position: relative;
 }
 
-.menager .circle{
+.menager .circle {
    position: absolute;
    background-color: #04ae00;
    width: 11px;
@@ -117,26 +117,96 @@ body {
 }
 
 /*top navigation*/
-#top_navigation{
+#top_navigation {
    height: 60px;
-   background-color: #ffffff;
+   background-color: #fff;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: end;
+   -ms-flex-pack: end;
+   justify-content: flex-end;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
 }
+#top_navigation p {
+   display: inline-block;
+   padding: 0 20px;
+}
+
+#top_navigation #cash {
+   width: 185px;
+}
+
+#top_navigation #not{
+   width: 57px;
+   position: relative;
+}
+
+#top_navigation .top_inside .circle_top {
+   position: absolute;
+   width: 9px;
+   height: 8px;
+   background-color: #f58220;
+   border-radius: 50%;
+   top: 17px;
+   left: 28px;
+}
+
+#top_navigation #leo {
+   width: 172px;
+}
+
+#top_navigation #back {
+   width: 57px;
+}
+#top_navigation #leo img {
+   padding-left: 18px
+}
+
+#top_navigation #leo p{
+   color: #56819f;
+   font-family: Roboto;
+   font-size: 12px;
+   font-weight: 300;
+}
+#top_navigation #cash p {
+   color: #9c9c9c;
+}
+
+
+#top_navigation .top_inside {
+   height: 60px;
+   border-left: 2px solid  #e3e3e3;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+
+
+
 
 /*inside*/
 #inside {
    height: 798px;
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   background-color: #ffffff;
+   background-color: #fff;
    margin: 18px 18px 22px 206px;
 }
 
 
-
-
-
-
-
+#inside #datapicker {
+   height: 108px;
+}
 
 
 
