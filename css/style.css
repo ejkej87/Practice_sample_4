@@ -195,18 +195,65 @@ body {
 
 
 /*inside*/
-#inside {
+#inside_top {
    height: 798px;
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    background-color: #fff;
    margin: 18px 18px 22px 206px;
 }
-
-
-#inside #datapicker {
-   height: 108px;
+#inside_top .inside_middle { 
+   border-bottom:  2px solid #e3e3e3;
+   height: 46px;
 }
+#inside_top .inside_middle p {
+   color: #a6a6a6;
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 46px;
+   text-transform: uppercase;
+   padding-left: 17px;
+}
+
+#inside_top #data_picker {
+   height: 108px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+
+
+#inside_top #data_picker .data_choose {
+   width: 325px; 
+   height: 40px;
+   border-radius: 3px;
+   border: 1px solid #e3e3e3;
+}
+
+#inside_top #data_picker #icon_inside {
+   position: relative;
+   height: 40px;
+   width: 40px;
+   padding-left: 18px;
+}
+
+#inside_top #data_picker #data_choose_icon_two {
+   position: absolute;
+   top: 10px;
+   left: 30px;
+}
+
+
+
+
 
 
 
