@@ -348,7 +348,6 @@ template {
   left: 0;
   background-color: #191919;
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -409,15 +408,12 @@ template {
 }
 
 .sidenav .menager {
-  display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .sidenav .menager img {
@@ -440,9 +436,6 @@ template {
   background-color: #04ae00;
   width: 11px;
   height: 11px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   top: 0;
   left: 55px;
@@ -453,13 +446,10 @@ template {
   height: 60px;
   background-color: #fff;
   border-bottom: 2px solid #e3e3e3;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: fixed;
@@ -518,13 +508,10 @@ template {
 #top_navigation .top_inside {
   height: 60px;
   border-left: 2px solid #e3e3e3;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -543,7 +530,6 @@ body {
 /*inside*/
 #inside_top,
 #inside_bottom {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin: 18px 18px 22px 206px;
@@ -579,16 +565,12 @@ body {
 #inside_top #data_picker,
 #inside_bottom #data_picker {
   height: 108px;
-  display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
@@ -599,21 +581,14 @@ body {
 #inside_bottom #data_picker #data_choose {
   width: 325px;
   height: 40px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #e3e3e3;
-  display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
@@ -693,10 +668,8 @@ body {
 }
 
 #inside_numbers .numbers p {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #a6a6a6;
@@ -723,7 +696,6 @@ body {
 }
 
 #inside_bottom {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin: 18px 18px 22px 206px;
@@ -752,10 +724,8 @@ body {
 }
 
 #inside_numbers .numbers p {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #a6a6a6;
@@ -803,18 +773,14 @@ button {
   max-width: 686px;
   margin: 0 auto;
   border-bottom: 2px solid #e3e3e3;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -860,7 +826,6 @@ button {
 .row-inner-1-4.icons img {
   opacity: 0;
   padding-right: 25px;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -871,5 +836,4 @@ button {
 .row:hover img {
   opacity: 1;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */

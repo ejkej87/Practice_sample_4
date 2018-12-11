@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pl">
 
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="css/style.prefixed.css">
    <title>Project_sample_4</title>
 </head>
 
@@ -12,6 +12,7 @@
 
 
    <!--                       Side nav                        -->
+
 
    <section id='side_navigation'>
       <div id="mySidenav" class="sidenav">
@@ -36,10 +37,13 @@
    </section>
 
 
+   <!--                       Top nav                        -->
+
+
    <section id="top_navigation">
       <div id="cash" class="top_inside">
          <img src="/images/icons/wallet.png" alt="">
-         <p>$1,5000.00</p>
+         <p>$1,500.00</p>
          <img src="/images/icons/arrow-down.png" alt="">
       </div>
       <div id="not" class="top_inside">
@@ -56,44 +60,199 @@
 
    </section>
 
+
+   <!--                       Inside Top Diagrams                -->
+
+
    <section id="inside_top">
+      <!--General statistics-->
       <div id='top' class="inside_middle">
-         <p>General statistic</p>
+         <h2>General statistic</h2>
       </div>
+
+      <!--Data picker-->
       <div id="data_picker" class="inside_middle">
-         <div class="data_choose"></div>
+         <div id="data_choose">
+            <div class="data_choose_inside" id="one">
+               <p>16.05.2016</p>
+            </div>
+            <div class="data_choose_inside" id="two">
+               <p>16.05.2016</p>
+               <img src="/images/icons/data_choose.png" alt="">
+            </div>
+         </div>
          <div id="icon_inside">
             <div id="data_choose_icon_one">
                <img src="/images/icons/Rounded_Rectangle_1_copy_2.png" alt="">
             </div>
             <div id="data_choose_icon_two">
                <img src="/images/icons/back.png" alt="">
-            </div> 
+            </div>
          </div>
-         
+      </div>
 
+      <!--Numbers-->
+      
+      <div id="inside_numbers">
+         <div class="numbers">
+            <p>Visit Signups<span>124</span></p>
+         </div>
+         <div class="numbers">
+            <p>Net deposit<span>564</span></p>
+         </div>
+         <div class="numbers">
+            <p>FTD <span>445</span></p>
+         </div>
+         <div class="numbers">
+            <p>Turn over<span>432</span></p>
+         </div>
+         <h3>Earnings chart</h3>
+         <img src="images/icons/graph.png" alt="">
       </div>
    </section>
 
-   <section id="inside_links">
-      <div id="diagrams" class="inside_middle"></div>
-      <div id="links" class="inside_middle">
-         <div class='top'>
-            <p>Links</p>
-         </div>
+   <!--                       Inside Bottom Links                     -->
+
+
+
+
+
+   <section id="inside_bottom">
+      <div class="inside_middle">
+         <h2>Links</h2>
       </div>
+      <div id="links">
+         <button>+ add new</button>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Home page</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://www.homepage.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Currently offer</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://www.currently.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Blurpix</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://blurpix.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Your Site</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://yoursite.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Google</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://google.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Facebook</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://facebook</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Dashboard</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://dashboar.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Blurax</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://blurax.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Piece of Wine</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://pieceofwine.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <div class="row">
+            <div class="row-inner-1-4 padding">
+               <p>Twitter</p>
+            </div>
+            <div class="row-inner-1-2">
+               <a href="#">http://twitter.com</a>
+            </div>
+            <div class="row-inner-1-4 icons">
+               <img src="/images/icons/link.png" alt="">
+               <img src="/images/icons/delete.png" alt="">
+            </div>
+         </div>
+         <button>+ add new</button>
+
+
+      </div>
+
+
+
    </section>
 
 
-
-
-
-
-
-
-   <section id="inside2">
-
-   </section>
 
 
 
