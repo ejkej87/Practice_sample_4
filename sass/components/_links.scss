@@ -1,0 +1,93 @@
+/*Links*/
+
+#links {
+   text-align: center;
+}
+
+button {
+   width: 127px;
+   height: 40px;
+   border-radius: 3px;
+   background-color: $color_15;
+   color: $color_2;
+   font-size: 15px;
+   font-weight: 300;
+   margin: 23px;
+   border: none;
+   cursor: pointer;
+   transition: 1s;
+   &:hover {
+      color: $color_15;
+      background-color: $color_2;
+      border: 1px solid $color_15;
+   }
+}
+
+.row {
+   max-width: 686px;
+   margin: 0 auto;
+   border-bottom: 2px solid $color_13;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-transition: all 0.4s;
+   transition: all 0.4s;
+   &:first-of-type {
+      border-top: 2px solid $color_13;
+   }
+   p {
+      color: $color_6;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+   }
+   a {
+      text-decoration: none;
+      color: $color_4;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 300;
+   }
+}
+
+.row-inner-1-4 {
+   -ms-flex-preferred-size: 35%;
+   flex-basis: 35%;
+   text-align: left;
+}
+
+.row-inner-1-2 {
+   -ms-flex-preferred-size: 30%;
+   flex-basis: 30%;
+   text-align: left;
+}
+
+.row-inner-1-4 {
+   &.icons {
+      text-align: right;
+   }
+   &.padding {
+      padding-left: 10px;
+   }
+   &.icons img {
+      opacity: 0;
+      padding-right: 25px;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+   }
+}
+
+.row:hover {
+   background-color: $color_16;
+   img {
+      opacity: 1;
+   }
+}
