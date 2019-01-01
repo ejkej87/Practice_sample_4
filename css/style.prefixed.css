@@ -374,10 +374,10 @@ template {
   color: #fff;
 }
 
-.sidenav #hamburger {
+.sidenav .hamburger {
   position: absolute;
-  top: 23px;
-  right: 18px;
+  top: 20px;
+  right: 15px;
   color: #fff;
 }
 
@@ -387,7 +387,7 @@ template {
   margin-right: 13px;
 }
 
-.sidenav hr {
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -397,7 +397,7 @@ template {
   background-color: #333;
 }
 
-.sidenav p {
+p {
   height: 10px;
   color: #808080;
   font-family: "Roboto", sans-serif;
@@ -407,7 +407,7 @@ template {
   padding-left: 20px;
 }
 
-.sidenav .menager {
+.menager {
   display: -ms-flexbox;
   display: flex;
   -moz-align-items: center;
@@ -416,11 +416,11 @@ template {
       align-items: center;
 }
 
-.sidenav .menager img {
+.menager img {
   padding-left: 20px;
 }
 
-.sidenav .menager p {
+.menager p {
   color: #56819f;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -749,6 +749,7 @@ body {
 
 #inside_numbers img {
   padding-bottom: 55px;
+  width: 100%;
 }
 
 /*Links*/
@@ -767,6 +768,13 @@ button {
   margin: 23px;
   border: none;
   cursor: pointer;
+  transition: 1s;
+}
+
+button:hover {
+  color: #f58220;
+  background-color: #fff;
+  border: 1px solid #f58220;
 }
 
 .row {

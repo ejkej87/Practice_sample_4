@@ -29,8 +29,6 @@ body {
    margin: $margin;
 }
 
-
-
 /*inside*/
 
 #inside_top,
@@ -202,6 +200,7 @@ body {
    }
    img {
       padding-bottom: 55px;
+      width: 100%;
    }
 }
 
@@ -222,6 +221,12 @@ button {
    margin: 23px;
    border: none;
    cursor: pointer;
+   transition: 1s;
+   &:hover {
+      color: #f58220;
+      background-color: #fff;
+      border: 1px solid #f58220;
+   }
 }
 
 .row {
