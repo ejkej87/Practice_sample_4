@@ -529,6 +529,10 @@ button:hover {
   background-color: #595959;
 }
 
+.sidenav a:hover path {
+  fill: #fff;
+}
+
 .sidenav #logo {
   position: absolute;
   top: 18px;
@@ -554,7 +558,7 @@ button:hover {
 }
 
 .sidenav.show {
-  display: block;
+  display: none;
 }
 
 hr {
@@ -842,8 +846,8 @@ body {
 }
 
 #inside_numbers .numbers {
-  width: 310px;
-  height: 37px;
+  max-width: 310px;
+  max-height: 37px;
   float: left;
   border-bottom: 2px solid #e3e3e3;
 }
@@ -852,8 +856,22 @@ body {
   margin-right: 33px;
 }
 
+@media all and (max-width: 991px) {
+  #inside_numbers .numbers:nth-of-type(1), #inside_numbers .numbers:nth-of-type(3) {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
 #inside_numbers .numbers:nth-of-type(2), #inside_numbers .numbers:nth-of-type(4) {
   margin-left: 33px;
+}
+
+@media all and (max-width: 991px) {
+  #inside_numbers .numbers:nth-of-type(2), #inside_numbers .numbers:nth-of-type(4) {
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 #inside_numbers .numbers p {
@@ -891,6 +909,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin: 18px 18px 22px 206px;
+}
+
+@media all and (max-width: 768px) {
+  .numbers {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

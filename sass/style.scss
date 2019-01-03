@@ -113,18 +113,28 @@ body {
    margin: $margin3;
    padding-top: $padding_top_2;
    .numbers {
-      width: 310px;
-      height: 37px;
+      max-width: 310px;
+      max-height: 37px;
       float: left;
       border-bottom: 2px solid $color_13;
       &:nth-of-type(1),
       &:nth-of-type(3) {
          margin-right: $margin-right_2;
+         @media all and (max-width: 991px) {
+            margin: 0 auto;
+            float: none;
+         }
+
       }
       &:nth-of-type(2),
       &:nth-of-type(4) {
          margin-left: $margin-left_2;
+         @media all and (max-width: 991px) {
+            margin: 0 auto;
+            float: none;
+         }
       }
+
       p {
          display: -webkit-box;
          display: -ms-flexbox;
@@ -141,6 +151,7 @@ body {
          font-weight: 300;
       }
    }
+
    h3 {
       margin-top: $margin-top_3;
       margin-bottom: $margin-bottom;
@@ -159,4 +170,10 @@ body {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    background-color: $color_2;
    margin: $margin2;
+}
+
+@media all and (max-width: 768px) {
+   .numbers {
+      margin: 0;
+   }
 }

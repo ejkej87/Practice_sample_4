@@ -23,6 +23,9 @@
          color: $color_8;
          border-left: 4px solid $color_15;
          background-color: $color_9;
+         path {
+            fill: $color_2;
+         }
       }
    }
    #logo {
@@ -42,13 +45,14 @@
       width: 15px;
       margin-right: $margin-right;
       path {
-         fill: #818181;
+         fill: $color_basic;
       }
    }
    &.show {
-      display: block;
+      display: none;
    }
 }
+
 
 hr {
    display: block;
