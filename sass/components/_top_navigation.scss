@@ -38,14 +38,9 @@
       left: 28px;
    }
    #leo {
-      width: 172px;
-   }
-   #back {
-      width: 57px;
-   }
-   #leo {
-      img {
-         padding-left: 18px;
+//      max-width: 172px;
+      svg {
+         margin-left: 18px;
       }
       p {
          color: #56819f;
@@ -53,6 +48,9 @@
          font-size: 12px;
          font-weight: 300;
       }
+   }
+   #back {
+      width: 57px;
    }
    #cash p {
       color: #9c9c9c;

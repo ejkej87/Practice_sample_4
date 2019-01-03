@@ -24,7 +24,7 @@
          border-left: 4px solid $color_15;
          background-color: $color_9;
       }
-   }  
+   }
    #logo {
       position: absolute;
       top: 18px;
@@ -37,43 +37,52 @@
       right: 15px;
       color: $color_2;
    }
-      a img {
+   a svg {
       height: 18px;
       width: 15px;
       margin-right: $margin-right;
+      path {
+         fill: #818181;
       }
    }
-   hr {
+   &.show {
       display: block;
-      height: 1px;
-      border: 0;
-      border-top: 1px solid color_1_brd;
-      margin-top: $margin-top;
-      margin-bottom: $margin-bottom;
-      background-color: $color_10;
+   }
+}
+
+hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid color_1_brd;
+   margin-top: $margin-top;
+   margin-bottom: $margin-bottom;
+   background-color: $color_10;
+}
+
+p {
+   height: 10px;
+   color: $color_11;
+   font-family: $fonts;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   padding-left: $padding-left;
+}
+
+.menager {
+   @include flexbox();
+   @include align-items(center);
+   svg {
+      margin-left: 20px;
    }
    p {
-      height: 10px;
-      color: $color_11;
+      color: $color_4;
       font-family: $fonts;
       font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
-      padding-left: $padding-left;
+      font-weight: 300;
    }
-   .menager {
-      @include flexbox();
-      @include align-items(center);
-      img {
-         padding-left: $padding-left;
-      }
-      p {
-         color: $color_4;
-         font-family: $fonts;
-         font-size: 14px;
-         font-weight: 300;
-      }
-   }
+}
 
 .menager {
    position: relative;
@@ -85,5 +94,5 @@
       @include border-radius(50%);
       top: 0;
       left: 55px;
-   } 
+   }
 }
