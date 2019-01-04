@@ -34,12 +34,16 @@ body {
 
 /*inside*/
 
-#inside_top,
-#inside_bottom {
+#inside_bottom,
+#inside_top {
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    background-color: $color_2;
    margin: $margin2;
+   @media all and (max-width: 991px) {
+            margin: auto 2%;
+   }
+   //   not working for:first-of-type
    .inside_middle:first-of-type {
       margin-top: $margin-top_2;
    }
@@ -47,64 +51,65 @@ body {
    .inside_top {
       border-bottom: 2px solid $color_13;
       height: 45px;
-      h2 {
-         color: $color_6;
-         font-family: $fonts;
-         font-size: 16px;
-         font-weight: 500;
-         text-transform: uppercase;
-         padding-left: $padding-left;
-         transform: translateY(50%);
-         margin: $margin;
-      }
    }
-   #data_picker {
-      height: 108px;
+   h2 {
+      color: $color_6;
+      font-family: $fonts;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-left: $padding-left;
+      transform: translateY(50%);
+      margin: $margin;
+   }
+}
+
+#data_picker {
+   height: 108px;
+   @include flexbox();
+   @include align-items(center);
+   @include justify-content(center);
+   #data_choose {
+      width: 325px;
+      height: 40px;
+      @include border-radius(3px);
+      border: 1px solid $color_13;
       @include flexbox();
       @include align-items(center);
       @include justify-content(center);
-      #data_choose {
-         width: 325px;
-         height: 40px;
-         @include border-radius(3px);
-         border: 1px solid $color_13;
-         @include flexbox();
-         @include align-items(center);
-         @include justify-content(center);
+   }
+   #data_choose #one {
+      border-right: 1px solid $color_13;
+   }
+   #data_choose #one,
+   #data_choose #two {
+      height: 80%;
+      width: 50%;
+      float: left;
+      p {
+         padding-left: $padding-left_2;
+         font-size: 14px;
+         font-weight: 300;
+         color: $color_10;
+         display: inline-block;
+         margin: $margin;
+         transform: translateY(50%);
       }
-      #data_choose #one {
-         border-right: 1px solid $color_13;
+      svg {
+         margin-left: 45px;
+         transform: translateY(50%);
       }
-      #data_choose #one,
-      #data_choose #two {
-         height: 80%;
-         width: 50%;
-         float: left;
-         p {
-            padding-left: $padding-left_2;
-            font-size: 14px;
-            font-weight: 300;
-            color: $color_10;
-            display: inline-block;
-            margin: $margin;
-            transform: translateY(50%);
-         }
-         svg {
-            margin-left: 45px;
-            transform: translateY(50%);
-         }
-      }
-      #icon_inside {
-         position: relative;
-         height: 40px;
-         width: 40px;
-         padding-left: $padding-left;
-      }
-      #data_choose_icon_two {
-         position: absolute;
-         top: 10px;
-         left: 30px;
-      }
+   }
+   #icon_inside {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      padding-left: $padding-left;
+   }
+   #data_choose_icon_two {
+      position: absolute;
+      top: 10px;
+      left: 30px;
    }
 }
 
@@ -165,15 +170,9 @@ body {
    }
 }
 
-#inside_bottom {
-   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   background-color: $color_2;
-   margin: $margin2;
-}
-
-@media all and (max-width: 768px) {
-   .numbers {
-      margin: 0;
-   }
-}
+//#inside_bottom {
+//   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   background-color: $color_2;
+//   margin: $margin2;
+//}

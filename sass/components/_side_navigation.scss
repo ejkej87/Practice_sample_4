@@ -12,6 +12,9 @@
    -webkit-transition: 0.5s;
    transition: 0.5s;
    padding-top: $padding_top;
+   @media all and (max-width: 991px) {
+      display: none;
+   }
    a {
       padding: $padding;
       text-decoration: none;
@@ -37,7 +40,7 @@
    .hamburger {
       position: absolute;
       top: 20px;
-      right: 15px;
+      left: 140px;
       color: $color_2;
    }
    a svg {

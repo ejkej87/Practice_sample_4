@@ -21,6 +21,13 @@
       display: inline-block;
       padding: 0 20px;
    }
+   #hamburger_open_nav {
+      position: absolute;
+      left: 140px;
+      @media all and (max-width: 991px) {
+         display: none;
+      }
+   }
    #cash {
       width: 185px;
    }
@@ -38,7 +45,7 @@
       left: 28px;
    }
    #leo {
-//      max-width: 172px;
+      //      max-width: 172px;
       svg {
          margin-left: 18px;
       }
@@ -69,4 +76,3 @@
       align-items: center;
    }
 }
-
