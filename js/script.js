@@ -1,13 +1,23 @@
 //menu
 
-function toggleMenu(visible) {
+function hideMenu(visible) {
+   document.querySelector('.sidenav').classList.toggle('hide', visible)
+}
+
+function showMenu(visible) {
    document.querySelector('.sidenav').classList.toggle('show', visible)
 }
 
-document.querySelector('.hamburger').addEventListener('click', function (e) {
+
+document.querySelector('.hamburger').addEventListener('click', function(e) {
    e.preventDefault();
-   toggleMenu()
+   hideMenu()
 });
+//
+//document.querySelector('.hamburger_open_nav').addEventListener('click', function(e) {
+//   e.preventDefault();
+//   showMenu()
+//});
 
 
 //chart

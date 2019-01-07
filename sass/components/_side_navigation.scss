@@ -50,9 +50,15 @@
       path {
          fill: $color_basic;
       }
+      .details {
+         fill:red;
+      }
+   }
+   &.hide {
+      display: none;
    }
    &.show {
-      display: none;
+      display: block;
    }
 }
 
