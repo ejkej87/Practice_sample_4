@@ -41,42 +41,46 @@ body {
    background-color: $color_2;
    margin: $margin2;
    @media all and (max-width: 991px) {
-            margin: auto 2%;
+      margin: auto 2%;
    }
-   //   not working for:first-of-type
-   .inside_middle:first-of-type {
+   .inside_middle {
       margin-top: $margin-top_2;
    }
+
    .inside_middle,
-   .inside_top {
+   .inside_top,
+   .links_top {
       border-bottom: 2px solid $color_13;
       height: 45px;
+      h2 {
+         color: $color_6;
+         font-family: $fonts;
+         font-size: 16px;
+         font-weight: 500;
+         text-transform: uppercase;
+         padding-left: $padding-left;
+         transform: translateY(50%);
+         margin: $margin;
+      }
    }
-   h2 {
-      color: $color_6;
-      font-family: $fonts;
-      font-size: 16px;
-      font-weight: 500;
-      text-transform: uppercase;
-      padding-left: $padding-left;
-      transform: translateY(50%);
-      margin: $margin;
+   &.full {
+      width: 95%;
+      margin: 2% auto;
    }
 }
 
 #data_picker {
    height: 108px;
-   @include flexbox();
-   @include align-items(center);
+   border-bottom: 2px solid $color_13;
+   @include flexbox;
    @include justify-content(center);
+   @include align-items(center);
    #data_choose {
       width: 325px;
       height: 40px;
       @include border-radius(3px);
       border: 1px solid $color_13;
-      @include flexbox();
-      @include align-items(center);
-      @include justify-content(center);
+      display: inline-block;
    }
    #data_choose #one {
       border-right: 1px solid $color_13;
@@ -105,6 +109,8 @@ body {
       height: 40px;
       width: 40px;
       padding-left: $padding-left;
+      display: inline-block;
+      @media all and (max-width: 767px) {}
    }
    #data_choose_icon_two {
       position: absolute;
@@ -141,12 +147,8 @@ body {
       }
 
       p {
-         display: -webkit-box;
-         display: -ms-flexbox;
-         display: flex;
-         -webkit-box-pack: justify;
-         -ms-flex-pack: justify;
-         justify-content: space-between;
+         @include flexbox;
+         @include justify-content(space-between);
          color: $color_6;
          font-family: Roboto;
          font-weight: 700;

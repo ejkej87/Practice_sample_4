@@ -30,12 +30,12 @@
    -ms-flex-pack: $flex-end;
 }
 
-@mixin justify-content($center) {
-   -webkit-justify-content: $center;
-   -moz-justify-content: $center;
-   -ms-justify-content: $center;
-   justify-content: $center;
-   -ms-flex-pack: $center;
+@mixin justify-content($space-between) {
+   -webkit-justify-content: $space-between;
+   -moz-justify-content: $space-between;
+   -ms-justify-content: $space-between;
+   justify-content: $space-between;
+   -ms-flex-pack: $space-between;
 }
 
 @mixin align-items($center) {
@@ -45,4 +45,13 @@
    align-items: center;
 }
 
+
+
+@mixin flex-pack($justify) {
+   -webkit-flex-pack: justify;
+   -ms-flex-pack: justify;
+   -moz-flex-pack: justify;
+   -ms-flex-packs: justify;
+   flex-pack: justify;
+}
 

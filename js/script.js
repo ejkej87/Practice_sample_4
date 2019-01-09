@@ -1,19 +1,23 @@
-//menu
+//hide side menu
 
 function hideMenu(visible) {
-   document.querySelector('.sidenav').classList.toggle('hide', visible)
+   document.querySelector('.sidenav').classList.toggle('hide', visible);
+   document.querySelector('#inside_top').classList.toggle('full', visible) 
+   document.querySelector('#inside_bottom').classList.toggle('full', visible) 
 }
-
-function showMenu(visible) {
-   document.querySelector('.sidenav').classList.toggle('show', visible)
-}
-
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
    e.preventDefault();
    hideMenu()
 });
-//
+
+
+//show side menu
+
+function showMenu(visible) {
+   document.querySelector('.sidenav').classList.toggle('show', visible)
+}
+
 //document.querySelector('.hamburger_open_nav').addEventListener('click', function(e) {
 //   e.preventDefault();
 //   showMenu()
