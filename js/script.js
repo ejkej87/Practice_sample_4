@@ -1,14 +1,16 @@
 //hide side menu
 
-function hideMenu(visible) {
+function toggleMenu(visible) {
    document.querySelector('.sidenav').classList.toggle('hide', visible);
    document.querySelector('#inside_top').classList.toggle('full', visible) 
    document.querySelector('#inside_bottom').classList.toggle('full', visible) 
+   document.querySelector('#inside_modal').classList.toggle('full', visible) 
+   
 }
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
    e.preventDefault();
-   hideMenu()
+   toggleMenu()
 });
 
 
@@ -18,10 +20,10 @@ function showMenu(visible) {
    document.querySelector('.sidenav').classList.toggle('show', visible)
 }
 
-//document.querySelector('.hamburger_open_nav').addEventListener('click', function(e) {
-//   e.preventDefault();
-//   showMenu()
-//});
+document.querySelector('#hamburger_open_nav').addEventListener('click', function(e) {
+   e.preventDefault();
+   toggleMenu()
+});
 
 
 //chart
@@ -60,3 +62,55 @@ var chart = new Chart(ctx, {
                  }]
    },
 });
+
+
+//modal
+
+//close modal by removing show class
+
+function closeModal() {
+   document.getElementById('overlay').classList.remove('show')
+};
+
+
+
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+   btn.addEventListener('click', function(e) {
+      e.preventDefault()
+      closeModal()
+   })
+});
+
+//close by click in background
+
+document.querySelector('#overlay').addEventListener('click', function(e) {
+   if(e.target === this) {
+      closeModal()
+   }
+});
+
+//close by click esc button
+
+document.addEventListener('keyup', function(e) {
+   if(e.keyCode === 27) {
+      closeModal()
+   }
+});
+
+//open modal 
+
+function openModal(modal) {
+   document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show')
+   })
+   document.querySelector('#overlay').classList.add('show')
+   document.querySelector(modal).classList.add('show')
+};
+
+document.querySelector('.open_modal').addEventListener("click", function(){
+   openModal('#myModal');
+})
+
+
+
+

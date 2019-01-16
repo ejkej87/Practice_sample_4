@@ -11,10 +11,11 @@
 @import "components/form_field";
 @import "components/general_statistic";
 @import "components/links";
+@import "components/modal";
 @import "components/side_navigation";
 @import "components/top_navigation";
 
-
+ 
 /* Sections */
 
 @import "section/registration_form";
@@ -35,13 +36,14 @@ body {
 /*inside*/
 
 #inside_bottom,
-#inside_top {
+#inside_top,
+#inside_modal {
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    background-color: $color_2;
    margin: $margin2;
    @media all and (max-width: 991px) {
-      margin: auto 2%;
+      margin: auto 0;
    }
    .inside_middle {
       margin-top: $margin-top_2;
@@ -75,6 +77,9 @@ body {
    @include flexbox;
    @include justify-content(center);
    @include align-items(center);
+   @media all and (max-width: 450px) {
+      flex-direction: column;
+   }
    #data_choose {
       width: 325px;
       height: 40px;
